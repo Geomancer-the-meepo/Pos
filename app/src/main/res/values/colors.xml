@@ -3,5 +3,6 @@
     <color name="colorPrimary">#E91E63</color>
     <color name="colorPrimaryDark">#E91E63</color>
     <color name="btnback">#E91E63</color>
+    <color name="backback">#fce4ec</color>
     <color name="colorAccent">#D81B60</color>
 </resources>
