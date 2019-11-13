@@ -17,6 +17,6 @@ class PoutListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_htoemal, container, false)
+        return inflater.inflate(R.layout.fragment_pout_list, container, false)
     }
 }

@@ -17,7 +17,7 @@ class HoteListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_htoemal, container, false)
+        return inflater.inflate(R.layout.fragment_hote_list, container, false)
     }
 
 
