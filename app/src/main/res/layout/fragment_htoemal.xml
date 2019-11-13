@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/backback"
@@ -9,5 +10,71 @@
     android:focusable="true">
 
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:background="@drawable/etbackback"
+            android:layout_height="45dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:padding="5sp"
+            android:hint="အမည်"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:padding="5sp"
+            android:background="@drawable/etbackback"
+            android:id="@+id/id_number"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="ထိုးမည့် နံပါတ်"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/et_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_name"
+            app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:padding="5sp"
+            android:hint="ထိုးမည့်ငွေ ပမာဏ"
+            android:background="@drawable/etbackback"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/id_number"
+            app:layout_constraintStart_toStartOf="@+id/id_number"
+            app:layout_constraintTop_toBottomOf="@+id/id_number" />
+
+        <Button
+
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorAccent"
+            android:text="ထည့်သွင်းရန်"
+            android:textStyle="bold"
+            android:textSize="27dp"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/et_amount"
+            app:layout_constraintStart_toStartOf="@+id/et_amount"
+            app:layout_constraintTop_toBottomOf="@+id/et_amount" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
