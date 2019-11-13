@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btHoteList -> {
                 didTapButton(btHoteList)
                 startActivity(Intent(applicationContext, HtoeList::class.java))
+                overridePendingTransition(R.anim.slide_up,R.anim.slide_up)
             }
             R.id.btHtwetList -> {
                 didTapButton(btHtwetList)
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btHtoemal -> {
                 didTapButton(btHtoemal)
                 startActivity(Intent(applicationContext, HtoeMal::class.java))
+                overridePendingTransition(R.anim.slide_up,0)
             }
         }
     }
