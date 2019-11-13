@@ -3,6 +3,7 @@
     package="wla.googoodolls.specialcalculator">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.HtoeMal"></activity>
+        <activity android:name=".ui.TotalList" />
+        <activity android:name=".ui.HtwetList" />
+        <activity android:name=".ui.PoutList" />
+        <activity android:name=".ui.HtoeList" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
