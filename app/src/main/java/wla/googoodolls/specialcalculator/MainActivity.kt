@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             v.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE));
         } else {
             //deprecated in API 26
-            v.vibrate(25)
+            v.vibrate(50)
         }
     }
     private fun loadFragment(f:Fragment){
