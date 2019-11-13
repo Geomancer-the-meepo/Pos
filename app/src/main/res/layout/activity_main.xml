@@ -72,4 +72,10 @@
         app:layout_constraintEnd_toEndOf="@+id/btnDown"
         app:layout_constraintStart_toStartOf="@+id/btnDown"
         app:layout_constraintTop_toBottomOf="@+id/btnDown" />
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

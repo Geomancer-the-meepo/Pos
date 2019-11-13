@@ -1,7 +1,6 @@
 package wla.googoodolls.specialcalculator
 
 import android.content.Context
-import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,33 +8,33 @@ import android.os.VibrationEffect
 import android.os.Vibrator
 import android.view.View
 import android.view.animation.AnimationUtils
+import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
-import wla.googoodolls.specialcalculator.ui.*
+import wla.googoodolls.specialcalculator.fragments.*
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.btHoteList -> {
                 didTapButton(btHoteList)
-                startActivity(Intent(applicationContext, HtoeList::class.java))
-                overridePendingTransition(R.anim.slide_up,R.anim.slide_up)
+                loadFragment(HoteListFragment())
             }
             R.id.btHtwetList -> {
                 didTapButton(btHtwetList)
-                startActivity(Intent(applicationContext, HtwetList::class.java))
+                loadFragment(HtwetListFragment())
             }
             R.id.btPoutList -> {
                 didTapButton(btPoutList)
-                startActivity(Intent(applicationContext, PoutList::class.java))
+                loadFragment(PoutListFragment())
             }
             R.id.btTotalList -> {
                 didTapButton(btTotalList)
-                startActivity(Intent(applicationContext, TotalList::class.java))
+                loadFragment(TotalFragment())
             }
             R.id.btHtoemal -> {
                 didTapButton(btHtoemal)
-                startActivity(Intent(applicationContext, HtoeMal::class.java))
-                overridePendingTransition(R.anim.slide_up,0)
+                loadFragment(HtoemalFragment())
             }
         }
     }
@@ -50,6 +49,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btHtoemal.setOnClickListener(this)
 
     }
+
 
     fun didTapButton(view: View) {
         val myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce)
@@ -69,5 +69,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             //deprecated in API 26
             v.vibrate(25)
         }
+    }
+    private fun loadFragment(f:Fragment){
+        supportFragmentManager.beginTransaction()
+            .setCustomAnimations(R.anim.slide_up,R.anim.slide_down)
+            .add(R.id.container,f)
+            .addToBackStack(null)
+            .commit()
     }
 }
