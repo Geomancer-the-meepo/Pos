@@ -4,7 +4,10 @@
     android:layout_width="match_parent"
     android:background="@color/backback"
     android:layout_height="match_parent"
-    tools:context=".fragments.TotalFragment">
+    tools:context=".fragments.TotalFragment"
+    android:clickable="true"
+    android:focusable="true">
+
 
 
 </FrameLayout>

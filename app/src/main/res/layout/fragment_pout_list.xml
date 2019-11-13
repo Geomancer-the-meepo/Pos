@@ -4,6 +4,9 @@
     android:background="@color/backback"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.PoutListFragment">
+    tools:context=".fragments.PoutListFragment"
+    android:clickable="true"
+    android:focusable="true">
+
 
 </FrameLayout>

@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/backback"
-    android:clickable="true"
     android:layout_height="match_parent"
-    tools:context=".fragments.HtoemalFragment">
+    tools:context=".fragments.HtoemalFragment"
+    android:clickable="true"
+    android:focusable="true">
 
 
 
