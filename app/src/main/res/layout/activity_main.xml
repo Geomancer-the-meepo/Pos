@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/backback"
     android:layout_height="match_parent"
+    android:background="@color/backback"
     tools:context=".MainActivity">
 
     <include
@@ -63,12 +63,12 @@
         android:id="@+id/btHtoemal"
         android:layout_width="0dp"
         android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/btnback"
+        android:text="@string/hote"
+        android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:background="@color/btnback"
-        android:layout_marginTop="32dp"
-        android:text="@string/hote"
         app:layout_constraintEnd_toEndOf="@+id/btnDown"
         app:layout_constraintStart_toStartOf="@+id/btnDown"
         app:layout_constraintTop_toBottomOf="@+id/btnDown" />
