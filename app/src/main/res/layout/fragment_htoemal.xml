@@ -33,7 +33,7 @@
         <EditText
             android:padding="5sp"
             android:background="@drawable/etbackback"
-            android:id="@+id/id_number"
+            android:id="@+id/et_number"
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_marginTop="32dp"
@@ -55,13 +55,13 @@
             android:hint="ထိုးမည့်ငွေ ပမာဏ"
             android:background="@drawable/etbackback"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="@+id/id_number"
-            app:layout_constraintStart_toStartOf="@+id/id_number"
-            app:layout_constraintTop_toBottomOf="@+id/id_number" />
+            app:layout_constraintEnd_toEndOf="@+id/et_number"
+            app:layout_constraintStart_toStartOf="@+id/et_number"
+            app:layout_constraintTop_toBottomOf="@+id/et_number" />
 
         <Button
 
-            android:id="@+id/button2"
+            android:id="@+id/btHtoe"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_marginTop="32dp"
