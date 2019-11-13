@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/backback"
     android:layout_height="match_parent"
-    tools:context=".fragments.HtoemalFragment"
+    android:background="@color/backback"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    tools:context=".fragments.HtoemalFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,29 +17,29 @@
         <EditText
             android:id="@+id/et_name"
             android:layout_width="0dp"
-            android:background="@drawable/etbackback"
             android:layout_height="45dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
+            android:background="@drawable/etbackback"
             android:ems="10"
-            android:padding="5sp"
             android:hint="အမည်"
             android:inputType="textPersonName"
+            android:padding="5sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:padding="5sp"
-            android:background="@drawable/etbackback"
             android:id="@+id/et_number"
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_marginTop="32dp"
+            android:background="@drawable/etbackback"
             android:ems="10"
             android:hint="ထိုးမည့် နံပါတ်"
             android:inputType="number"
+            android:padding="5sp"
             app:layout_constraintEnd_toEndOf="@+id/et_name"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/et_name"
@@ -47,31 +47,30 @@
 
         <EditText
             android:id="@+id/et_amount"
+            style="@style/formDropDown"
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_marginTop="32dp"
-            android:ems="10"
-            android:padding="5sp"
-            android:hint="ထိုးမည့်ငွေ ပမာဏ"
             android:background="@drawable/etbackback"
+            android:ems="10"
+            android:hint="ထိုးမည့်ငွေ ပမာဏ"
             android:inputType="number"
+            android:padding="5sp"
             app:layout_constraintEnd_toEndOf="@+id/et_number"
             app:layout_constraintStart_toStartOf="@+id/et_number"
             app:layout_constraintTop_toBottomOf="@+id/et_number" />
 
         <Button
-
             android:id="@+id/btHtoe"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_marginTop="32dp"
             android:background="@color/colorAccent"
             android:text="ထည့်သွင်းရန်"
-            android:textStyle="bold"
-            android:textSize="27dp"
-
             android:textAllCaps="false"
             android:textColor="@android:color/white"
+            android:textSize="27dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/et_amount"
             app:layout_constraintStart_toStartOf="@+id/et_amount"
             app:layout_constraintTop_toBottomOf="@+id/et_amount" />
